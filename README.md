@@ -164,6 +164,65 @@ private int pages;
 Work all Exercises from 2.19 to 2.58 that are **NOT** marked *Challenge exercise*.
 READ upto and INCLUDING section 2.15 of this chapter.
 
+Exercise 2.19 Suppose that the class Pet has a field called name that is of type
+String. Write an assignment statement in the body of the following constructor so
+that the name field will be initialized with the value of the constructor’s parameter.
+public Pet(String petsName)
+{
+private String name = petsName;
+}
+
+Exercise 2.21 Compare the getBalance method with the getPrice method.
+What are the differences between them?
+
+the method alias as well as getPrice returns the field price while getBalance returns the field balance
+
+Exercise 2.22 If a call to getPrice can be characterized as ‘What do tickets
+cost?’, how would you characterize a call to getBalance?
+
+How much money has been inserted?
+
+Exercise 2.23 If the name of getBalance is changed to getAmount, does the
+return statement in the body of the method need to be changed, too? Try it out within
+BlueJ.
+
+No
+
+Exercise 2.24 Define an accessor method, getTotal, that returns the value of
+the total field.
+
+    public int getTotal()
+    {
+        return total;
+    }
+
+Exercise 2.25 Try removing the return statement from the body of getPrice.
+What error message do you see now when you try compiling the class?
+
+missing return statement
+
+Exercise 2.26 Compare the method signatures of getPrice and printTicket
+in Code 2.1. Apart from their names, what is the main difference between them?
+
+the type of printTicket is void as it does not need to return a value
+
+Exercise 2.27 Do the insertMoney and printTicket methods have return
+statements? Why do you think this might be? Do you notice anything about their
+headers that might suggest why they do not require return statements?
+
+No, as there was no return promised by the void type
+
+Exercise 2.28 Create a ticket machine with a ticket price of your choosing. Before
+doing anything else, call the getBalance method on it. Now call the insertMoney
+method (Code 2.6) and give a non-zero positive amount of money as the actual
+parameter. Now call getBalance again. The two calls to getBalance should show
+different output because the call to insertMoney had the effect of changing the
+machine’s state via its balance field.
+
+Completed
+
+
+
 
 
 
