@@ -475,9 +475,96 @@ public void printTicket()
     }
 }
 
+Exercise 2.59 List the name and return type of this method:
+public String getCode()
+{
+return code;
+}
 
+the name is getCode and the return type is String
 
+Exercise 2.60 List the name of this method and the name and type of its parameter:
+public void setCredits(int creditValue)
+{
+credits = creditValue;
+}
 
+the name is setCredits and the parameter is creditValue with type int
+
+Exercise 2.61 Write out the outer wrapping of a class called Person. Remember
+to include the curly brackets that mark the start and end of the class body, but otherwise leave the body empty.
+
+public class Person
+{
+
+}
+
+Exercise 2.62 Write out definitions for the following fields:
+■ A field called name of type String.
+■ A field of type int called age.
+■ A field of type String called code.
+■ A field called credits of type int.
+
+private String name;
+private int age;
+private String code;
+private int credits;
+
+Exercise 2.63 Write out a constructor for a class called Module. The constructor
+should take a single parameter of type String called moduleCode. The body of
+the constructor should assign the value of its parameter to a field called code. You
+don’t have to include the definition for code, just the text of the constructor.
+
+public Module(String moduleCode){
+code = moduleCode;
+}
+
+Exercise 2.64 Write out a constructor for a class called Person. The constructor
+should take two parameters. The first is of type String and is called myName. The
+second is of type int and is called myAge. The first parameter should be used to
+set the value of a field called name, and the second should set a field called age.
+You don’t have to include the definitions for fields, just the text of the constructor.
+
+public Person(String myName, int myAge){
+name = myName;
+age = myAge;
+}
+
+Exercise 2.65 Correct the error in this method:
+public void getAge()
+{
+return age;
+}
+
+public int getAge()
+{
+return age;
+}
+
+Exercise 2.66 Write an accessor method called getName that returns the value
+of a field called name, whose type is String.
+
+public String getName()
+{
+return name;
+}
+
+Exercise 2.67 Write a mutator method called setAge that takes a single parameter of type int and sets the value of a field called age.
+
+public void setAge(int newAge){
+age = newAge;
+}
+
+Exercise 2.68 Write a method called printDetails for a class that has a field
+of type String called name. The printDetails method should print out a
+String of the form “The name of this person is” followed by the value of
+the name field. For instance, if the value of the name field is “Helen” then
+printDetails would print:
+The name of this person is Helen
+
+public void printDetails(){
+System.out.print("The name of this person is " + name);
+}
 
 
 
